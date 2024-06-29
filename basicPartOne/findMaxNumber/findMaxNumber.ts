@@ -1,1 +1,1 @@
-export const findMaxNumber = (arr: number[]) => Math.max(...arr);
+export const findMaxNumber = (arr: number[]): number => Math.max(...arr);

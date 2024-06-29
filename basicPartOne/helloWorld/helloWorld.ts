@@ -1,3 +1,1 @@
-type Greeter = () => string;
-
-export const helloWorld: Greeter = () => "Hello World";
+export const helloWorld = (): string => "Hello World";
