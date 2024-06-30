@@ -17,7 +17,7 @@ export const analyzeCarMileage = (cars: Car[]): CarAnalysis => {
     (mileageSum, { mileage }) => mileageSum + mileage,
     0
   );
-  const averageMileage = totalMileage / cars.length;
+  const averageMileage = parseFloat((totalMileage / cars.length).toFixed(2));
   const highestMileage = Math.max(...cars.map(({ mileage }) => mileage));
   const lowestMileage = Math.min(...cars.map(({ mileage }) => mileage));
 
