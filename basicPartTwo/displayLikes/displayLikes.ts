@@ -14,5 +14,3 @@ export const displayLikes = (arr: string[]): string => {
       return `${arr[0]}, ${arr[1]} and ${arrLength - 2} others like this`;
   }
 };
-
-displayLikes(["Alex", "Jacob", "Mark", "Max"]);
