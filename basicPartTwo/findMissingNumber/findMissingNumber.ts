@@ -1,11 +1,9 @@
 export const findMissingNumber = (arr: number[]): number => {
-  arr.sort((a, b) => a - b);
+  if (arr.length === 0) return 1;
 
-  for (let i = 1; i < arr.length; i++) {
-    if (arr[i] !== arr[i - 1] + 1) {
-      return arr[i - 1] + 1;
-    }
-  }
+  const arrLengthIncremented = arr.length + 1;
+  const expectedSum = (arrLengthIncremented * (arrLengthIncremented + 1)) / 2;
+  const actualSum = arr.reduce((acc, curr) => acc + curr, 0);
 
-  return 1;
+  return expectedSum - actualSum;
 };
