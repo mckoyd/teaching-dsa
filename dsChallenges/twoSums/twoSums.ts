@@ -1,7 +1,4 @@
-export const twoSums = (
-  numbers: number[],
-  targetNumber: number
-): number[] | undefined => {
+export const twoSums = (numbers: number[], targetNumber: number): number[] => {
   const complementSet = new Set();
 
   for (let i = 0; i < numbers.length; i++) {
@@ -11,4 +8,6 @@ export const twoSums = (
 
     complementSet.add(numbers[i]);
   }
+
+  return [];
 };
